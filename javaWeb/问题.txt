@@ -1,0 +1,28 @@
+1.package包的命名问题，为什么 dao/UserDaoImpl 的包名是 com.javaweb.demo.dao.impl
+但是 util下面的 DBconn.java的包名是 package com.javaweb.demo.util;
+
+2.dao/UserDao 接口的问题 
+import java.util.List; public List<User> 返回值类型是List
+
+3.web下面的web.xml 对应的 servlet路径是直接从 src下面的 com.javaweb.demo.***.***开始的，是约定了src
+为入口么？
+
+4.servlet 里面 doGet 里面的throws ServletException, IOException 是干什么的。
+
+5.页面里面的 java代码段是干什么的？path, 和basePath写在里面是干嘛的？
+https://blog.csdn.net/HH1778981113/article/details/86705017
+给页面提供相对路径的地址####(为什么不用公共页面把这个参数值提取出来，这样就不用写很多遍了)####
+
+6.全部文件中 testJavaWeb.iml是干什么的?
+
+7.web 下的 WEB-INF 下面的lib里面 放置的mysql包没有引用，是默认引用么？
+
+8.testJavaWeb.iml  和 web.xml是默认就存在的么?
+
+9.有一个EncodingFilter的类，被定义在web.xml里面。这个filter主要是干什么的?
+
+10.servlet 里面 doGet 和 doPost 分别是干嘛的?
+
+11.UserDaolmpl 是用来去连接数据库的， 服务页面和 UserDaolmpl类进行交互，来处理数据
+
+12.javax.servlet javax是什么包？
