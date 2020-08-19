@@ -6,23 +6,43 @@ import java.util.List; public List<User> 返回值类型是List
 
 3.web下面的web.xml 对应的 servlet路径是直接从 src下面的 com.javaweb.demo.***.***开始的，是约定了src
 为入口么？
+https://www.cnblogs.com/linhuaming/p/9464356.html， sum 公司做的文件约定
 
 4.servlet 里面 doGet 里面的throws ServletException, IOException 是干什么的。
+Servlet通常称为服务器端小程序
+https://www.cnblogs.com/linhuaming/p/9464356.html
 
 5.页面里面的 java代码段是干什么的？path, 和basePath写在里面是干嘛的？
 https://blog.csdn.net/HH1778981113/article/details/86705017
 给页面提供相对路径的地址####(为什么不用公共页面把这个参数值提取出来，这样就不用写很多遍了)####
 
 6.全部文件中 testJavaWeb.iml是干什么的?
+https://blog.csdn.net/qq_41933149/article/details/101153366 idea 编辑器生成的文件目录信息
 
 7.web 下的 WEB-INF 下面的lib里面 放置的mysql包没有引用，是默认引用么？
+https://blog.csdn.net/weixin_34006468/article/details/85548248
+如图所示，直接放进去就自动引用了：并不需要自己建Lib--build path
+
+import java.sql.*; 就可以使用了
+
 
 8.testJavaWeb.iml  和 web.xml是默认就存在的么?
+是的，默认自动创建出来的
 
 9.有一个EncodingFilter的类，被定义在web.xml里面。这个filter主要是干什么的?
+https://www.cnblogs.com/linhuaming/p/9464356.html 主要进行对请求接受的数据包，和服务端对客户端发送的
+数据包的预处理，是早于severlet的
 
 10.servlet 里面 doGet 和 doPost 分别是干嘛的?
+doGet 就是页面get请求路径的时候，进行什么处理。doPost就是post请求路径的时候，进行什么处理
 
 11.UserDaolmpl 是用来去连接数据库的， 服务页面和 UserDaolmpl类进行交互，来处理数据
 
-12.javax.servlet javax是什么包？
+12.javax.servlet javax是什么包?
+https://baike.baidu.com/item/javax/6413567?fr=aladdin
+
+java和javax都是Java的API(Application Programming Interface)包，java是核心包，
+javax的x是extension的意思，也就是扩展包。java类库是java发布之初就确定了的基础库，
+而javax类库则是在上面增加的一层东西，就是为了保持版本兼容要保存原来的，
+但有些东西有了更好的解决方案，所以，就加上些，典型的就是awt(Abstract Windowing ToolKit) 和
+swing。
